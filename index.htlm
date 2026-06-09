@@ -2,28 +2,36 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Переход в канал</title>
-    <!-- Яндекс.Метрика (укажите свой ID) -->
+    <title>Переход в канал MAX</title>
+    <!-- Yandex.Metrika counter (ваш счётчик 109721884) -->
     <script type="text/javascript">
         (function(m,e,t,r,i,k,a){
             m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();
             for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
             k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=ID_ВАШЕГО_СЧЁТЧИКА', 'ym');
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109721884', 'ym');
 
-        ym(ID_ВАШЕГО_СЧЁТЧИКА, 'init', {
+        ym(109721884, 'init', {
+            ssr: true,
             webvisor: true,
             clickmap: true,
             ecommerce: "dataLayer",
+            referrer: document.referrer,
+            url: location.href,
             accurateTrackBounce: true,
             trackLinks: true
         });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/109721884" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
+    <script type="text/javascript">
         function goToChannel() {
-            var url = 'ВАША_ССЫЛКА_НА_КАНАЛ_ИЛИ_ПОСТ';
+            // Ваша новая ссылка на канал в MAX
+            var url = 'https://max.ru/id343530079380_biz/AZ6HIdVOQB8';
             var done = false;
-            var goalsSent = 0; // счётчик отправленных целей
+            var goalsSent = 0;
 
             function checkAndGo() {
                 goalsSent++;
@@ -40,22 +48,20 @@
                 }
             }
 
-            // Отправляем две цели
-            ym(ID_ВАШЕГО_СЧЁТЧИКА, 'reachGoal', 'userDidSubscribe', checkAndGo);
-            ym(ID_ВАШЕГО_СЧЁТЧИКА, 'reachGoal', 'toChannel', checkAndGo);
+            // Отправка двух целей в ваш счётчик
+            ym(109721884, 'reachGoal', 'userDidSubscribe', checkAndGo);
+            ym(109721884, 'reachGoal', 'toChannel', checkAndGo);
 
-            // Подстраховка: перейти через 1.5 секунды, если колбэки не сработали
+            // Резервный переход через 1.5 секунды
             setTimeout(fallbackGo, 1500);
         }
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/ID_ВАШЕГО_СЧЁТЧИКА" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Яндекс.Метрика -->
 </head>
 <body style="text-align:center; font-family:sans-serif; margin-top:80px;">
-    <h1>Переход в канал</h1>
+    <h1>Переход в канал MAX</h1>
     <button onclick="goToChannel()" style="padding:15px 30px; font-size:18px; background:#0077ff; color:white; border:none; border-radius:8px; cursor:pointer;">
         Перейти в канал
     </button>
-    <p style="margin-top:30px; color:#666;">Нажмите кнопку, чтобы перейти</p>
+    <p style="margin-top:30px; color:#666;">Нажмите кнопку, чтобы перейти в канал Дмитрия</p>
 </body>
 </html>
